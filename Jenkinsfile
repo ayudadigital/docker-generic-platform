@@ -1,9 +1,9 @@
 #!groovy
 
-@Library('github.com/teecke/jenkins-pipeline-library@v3.4.1') _
+@Library('github.com/tpbtools/jenkins-pipeline-library@v4.0.0') _
 
 // Initialize global config
-cfg = jplConfig('docker-generic-platform', 'platform', '', [email: env.CITEECKE_NOTIFY_EMAIL_TARGETS])
+cfg = jplConfig('docker-generic-platform', 'platform', '', [email: env.CI_NOTIFY_EMAIL_TARGETS])
 
 pipeline {
     agent { label 'docker' }
@@ -35,6 +35,9 @@ pipeline {
     post {
         always {
             jplPostBuild(cfg)
+        }
+        cleanup {
+            deleteDir()
         }
     }
 
