@@ -1,4 +1,4 @@
-# Teecke - Docker Generic Platform
+# TIC para Bien - Docker Generic Platform
 
 Platform - GitOps
 
@@ -19,7 +19,7 @@ Learn to work on a platform composed of different components (services and produ
 ## Requirements
 
 - [Docker](https://www.docker.com) installed
-- Teecke [Devcontrol Tool](https://github.com/teecke/devcontrol) installed (3)
+- TIC para Bien -  [Devcontrol Tool](https://github.com/tpbtools/devcontrol) installed (3)
 
 ## Components
 
@@ -27,18 +27,21 @@ Learn to work on a platform composed of different components (services and produ
 
 Developed by the Business Teams. Defined as the things that the customers or the end users can use.
 
-- Web Application Server [Teecke GP Webapp](https://github.com/teecke/gp-webapp).
-- Statics Server [Teecke GP Statics](https://github.com/teecke/gp-nginx).
+- Web Application Server [GP Webapp](https://github.com/tpbtools/gp-webapp).
+- Statics Server [GP Statics](https://github.com/tpbtools/gp-nginx).
 
 ### Services
 
 Developed by the Platform Teams. Used to develop, build and operate the products.
 
-- Jenkins from [Teecke GP Jenkins](https://github.com/teecke/gp-jenkins).
-- Mail from [Teecke GP Mail](https://github.com/teecke/gp-mail).
-- Nexus from [Teecke GP Nexus](https://github.com/teecke/gp-nexus).
-- Sonar from [Warchant Sonar](https://gist.github.com/Warchant/0d0f0104fe7adf3b310937d2db67b512) recipie.
+- HAProxy from [GP HAProxy](https://github.com/tpbtools/gp-haproxy).
+- Jenkins from [GP Jenkins](https://github.com/tpbtools/gp-jenkins).
+- Mail from [GP Mail](https://github.com/tpbtools/gp-mail).
+- Statics with Nginx from [GP Nginx](https://github.com/tpbtools/gp-nginx).
+- Artifacts with Sonatype Nexus from [GP Nexus](https://github.com/tpbtools/gp-nexus).
+- Webapp with PHP from [GP PHP](https://github.com/tpbtools/gp-php).
 - Passbolt fromn [Official Passbolt](https://help.passbolt.com/hosting/install/ce/docker) docker-compose recipie.
+- Sonar from [GP Sonarqube](https://github.com/tpbtools/gp-sonarqube).
 
 ## Operation
 
@@ -83,6 +86,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 - Fulfill the [The DevOps Hispano Challenge](https://github.com/devops-hispano/reto-devops]) github project (1)
 - Build with [GitOps](https://www.weave.works/technologies/gitops/) Mindset (2)
-- Bash Scripts managed using Teecke [Devcontrol)](https://github.com/teecke/devcontrol) tool (3)
+- Bash Scripts managed using [Devcontrol)](https://github.com/tpbtools/devcontrol) tool (3)
 
 ## Known issues

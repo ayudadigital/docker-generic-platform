@@ -1,3 +1,3 @@
-# Teecke - Docker Generic Platform Product: Nginx Statics Server
+# Docker Generic Platform Product: Nginx Statics Server
 
-Based on [Teecke - Generic Platform Nginx Application Server](https://github.com/teecke/gp-nginx) project
+Based on [Generic Platform Nginx Application Server](https://github.com/tpbtools/gp-nginx) project

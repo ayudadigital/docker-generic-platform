@@ -1,3 +1,3 @@
-# Teecke - Docker Generic Platform Service: Jenkins Service
+# Docker Generic Platform Service: Jenkins Service
 
-Based on [Teecke - Generic Platform Jenkins](https://github.com/teecke/gp-jenkins) project
+Based on [Generic Platform Jenkins](https://github.com/tpbtools/gp-jenkins) project

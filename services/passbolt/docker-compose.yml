@@ -9,7 +9,7 @@ services:
       - passboltdb:/var/lib/mysql
 
   passbolt:
-    image: teecke/gp-passbolt:0.2.1
+    image: tpbtools/gp-passbolt:1.1.0
     ports:
       - 4004:80
     tty: true

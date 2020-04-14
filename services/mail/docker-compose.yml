@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   mail:
-    image: teecke/gp-mail:0.3.0
+    image: tpbtools/gp-mail:1.1.0
     volumes:
       - ./data/var/spool/postfix:/var/spool/postfix
     ports:
