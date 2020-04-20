@@ -1,3 +1,3 @@
-# Teecke - Docker Generic Platform Service: Passbolt Service
+# Docker Generic Platform Service: Passbolt Service
 
-Based on [Teecke - Generic Platform Passbolt](https://github.com/teecke/gp-passbolt) project.
+Based on [Generic Platform Passbolt](https://github.com/tpbtools/gp-passbolt) project.

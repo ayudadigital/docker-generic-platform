@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   webapp:
-    image: teecke/gp-php:0.2.0
+    image: tpbtools/gp-php:1.0.0
     ports:
       - 8001:80
     volumes:

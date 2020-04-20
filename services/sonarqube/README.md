@@ -1,3 +1,3 @@
-# Teecke - Docker Generic Platform Service: SonarQube Service
+# Docker Generic Platform Service: SonarQube Service
 
-Based on [Teecke - Generic Platform Passbolt](https://github.com/teecke/gp-sonarqube) project.
+Based on [Generic Platform Passbolt](https://github.com/tpbtools/gp-sonarqube) project.

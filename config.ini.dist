@@ -3,12 +3,13 @@
 # Put here the services you want to execute  
 #
 # services catalog:
+# - haproxy
 # - jenkins
 # - mail
 # - nexus
 # - passbolt
 # - sonarqube
-services=(jenkins mail nexus passbolt sonarqube)
+services=(haproxy jenkins mail nexus passbolt sonarqube)
 
 # products
 #
@@ -24,6 +25,8 @@ products=(webapp statics)
 # Assets directories to be created
 #
 assets=( \
+  services/haproxy/data/etc \
+  services/haproxy/data/etc/letsencrypt \
   services/jenkins/data/var/jenkins_home \
   services/mail/data/var/spool/postfix \
   services/nexus/data/nexus-data \

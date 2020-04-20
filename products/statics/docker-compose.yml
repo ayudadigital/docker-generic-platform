@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   statics:
-    image: teecke/gp-nginx:0.2.1
+    image: tpbtools/gp-nginx:1.1.0
     ports:
       - 8002:80
     volumes:                                                                     
