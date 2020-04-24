@@ -19,7 +19,7 @@ Learn to work on a platform composed of different components (services and produ
 ## Requirements
 
 - [Docker](https://www.docker.com) installed
-- TIC para Bien -  [Devcontrol Tool](https://github.com/ayudadigital/devcontrol) installed (3)
+- Ayuda Digital -  [Devcontrol Tool](https://github.com/ayudadigital/devcontrol) installed (3)
 
 ## Components
 
