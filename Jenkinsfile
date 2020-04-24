@@ -28,6 +28,7 @@ pipeline {
             when { expression { cfg.BRANCH_NAME.startsWith('release/new') } }
             steps {
                 jplMakeRelease(cfg, true)
+                deleteDir()
             }
         }
     }
@@ -35,9 +36,6 @@ pipeline {
     post {
         always {
             jplPostBuild(cfg)
-        }
-        cleanup {
-            deleteDir()
         }
     }
 
