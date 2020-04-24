@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   nexus:
-    image: ayudadigital/gp-nexus:1.1.0
+    image: ayudadigital/gp-nexus:2.0.0
     ports:
       - 4003:8081
     volumes:

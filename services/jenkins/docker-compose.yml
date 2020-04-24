@@ -1,8 +1,8 @@
 version: '3.7'
 
 services:
-  jenkins:
-    image: ayudadigital/gp-jenkins:1.1.0
+  jenkins-dind:
+    image: ayudadigital/gp-jenkins:2.0.0
     ports:
       - 4001:8080
       - 5001:5000

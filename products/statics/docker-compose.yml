@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   statics:
-    image: ayudadigital/gp-nginx:1.1.0
+    image: ayudadigital/gp-nginx:2.0.0
     ports:
       - 8002:80
     volumes:                                                                     
