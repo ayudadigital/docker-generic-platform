@@ -1,4 +1,4 @@
-# TIC para Bien - Docker Generic Platform
+# Ayuda Digital - Docker Generic Platform
 
 Platform - GitOps
 
@@ -19,7 +19,7 @@ Learn to work on a platform composed of different components (services and produ
 ## Requirements
 
 - [Docker](https://www.docker.com) installed
-- TIC para Bien -  [Devcontrol Tool](https://github.com/tpbtools/devcontrol) installed (3)
+- TIC para Bien -  [Devcontrol Tool](https://github.com/ayudadigital/devcontrol) installed (3)
 
 ## Components
 
@@ -27,21 +27,21 @@ Learn to work on a platform composed of different components (services and produ
 
 Developed by the Business Teams. Defined as the things that the customers or the end users can use.
 
-- Web Application Server [GP Webapp](https://github.com/tpbtools/gp-webapp).
-- Statics Server [GP Statics](https://github.com/tpbtools/gp-nginx).
+- Web Application Server [GP Webapp](https://github.com/ayudadigital/gp-webapp).
+- Statics Server [GP Statics](https://github.com/ayudadigital/gp-nginx).
 
 ### Services
 
 Developed by the Platform Teams. Used to develop, build and operate the products.
 
-- HAProxy from [GP HAProxy](https://github.com/tpbtools/gp-haproxy).
-- Jenkins from [GP Jenkins](https://github.com/tpbtools/gp-jenkins).
-- Mail from [GP Mail](https://github.com/tpbtools/gp-mail).
-- Statics with Nginx from [GP Nginx](https://github.com/tpbtools/gp-nginx).
-- Artifacts with Sonatype Nexus from [GP Nexus](https://github.com/tpbtools/gp-nexus).
-- Webapp with PHP from [GP PHP](https://github.com/tpbtools/gp-php).
+- HAProxy from [GP HAProxy](https://github.com/ayudadigital/gp-haproxy).
+- Jenkins from [GP Jenkins](https://github.com/ayudadigital/gp-jenkins).
+- Mail from [GP Mail](https://github.com/ayudadigital/gp-mail).
+- Statics with Nginx from [GP Nginx](https://github.com/ayudadigital/gp-nginx).
+- Artifacts with Sonatype Nexus from [GP Nexus](https://github.com/ayudadigital/gp-nexus).
+- Webapp with PHP from [GP PHP](https://github.com/ayudadigital/gp-php).
 - Passbolt fromn [Official Passbolt](https://help.passbolt.com/hosting/install/ce/docker) docker-compose recipie.
-- Sonar from [GP Sonarqube](https://github.com/tpbtools/gp-sonarqube).
+- Sonar from [GP Sonarqube](https://github.com/ayudadigital/gp-sonarqube).
 
 ## Operation
 
@@ -86,6 +86,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 - Fulfill the [The DevOps Hispano Challenge](https://github.com/devops-hispano/reto-devops]) github project (1)
 - Build with [GitOps](https://www.weave.works/technologies/gitops/) Mindset (2)
-- Bash Scripts managed using [Devcontrol)](https://github.com/tpbtools/devcontrol) tool (3)
+- Bash Scripts managed using [Devcontrol)](https://github.com/ayudadigital/devcontrol) tool (3)
 
 ## Known issues
