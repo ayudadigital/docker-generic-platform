@@ -71,7 +71,7 @@ EOF
                 fi
             done
             for file in ${distfiles[*]}; do
-                if [ ! -d "${directory}" ]; then
+                if [ ! -f "${file%.*}" ]; then
                     echo -n "- Creating '${file%.*}' config file from the dist file..."
                     cp -pn "${file}" "${file%.*}"
                     echo "[OK]"
