@@ -1,4 +1,4 @@
-version: '3.7'
+version: '2.4'
 
 services:
   passboltdb:
@@ -6,7 +6,7 @@ services:
     env_file:
       - mysql.env
     volumes:
-      - passboltdb:/var/lib/mysql
+      - ./data/passboltdb/var/lib/mysql:/var/lib/mysql
 
   passbolt:
     image: ayudadigital/gp-passbolt:2.0.0
@@ -18,8 +18,8 @@ services:
     env_file:
       - passbolt.env
     volumes:
-      - ./data/var/www/passbolt/config/gpg:/var/www/passbolt/config/gpg
-      - ./data/var/www/passbolt/webroot/img/public:/var/www/passbolt/webroot/img/public
+      - ./data/passbolt/var/www/passbolt/config/gpg:/var/www/passbolt/config/gpg
+      - ./data/passbolt/var/www/passbolt/webroot/img/public:/var/www/passbolt/webroot/img/public
     tmpfs:
       - /run
     command: ["/usr/bin/wait-for.sh", "db:3306", "-t", "60", "--", "/docker-entrypoint.sh"]
