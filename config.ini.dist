@@ -25,17 +25,18 @@ products=(webapp statics)
 # Assets directories to be created
 #
 assets=( \
-  services/haproxy/data/etc \
   services/haproxy/data/etc/letsencrypt \
   services/jenkins/data/var/jenkins_home \
   services/mail/data/var/spool/postfix \
   services/nexus/data/nexus-data \
-  services/passbolt/data/var/www/passbolt/config/gpg \
-  services/passbolt/data/var/www/passbolt/webroot/img/public \
-  services/sonarqube/data services/sonarqube/data/opt services/sonarqube/data/opt/sonarqube services/sonarqube/data/opt/sonarqube/conf \
-  services/sonarqube/data/opt/sonarqube/data \
-  services/sonarqube/data/opt/sonarqube/extensions \
-  services/sonarqube/data/opt/sonarqube/lib services/sonarqube/data/opt/sonarqube/lib/bundled-plugins \
+  services/passbolt/data/passboltdb/var/lib/mysql \
+  services/passbolt/data/passbolt/var/www/passbolt/config/gpg \
+  services/passbolt/data/passbolt/var/www/passbolt/webroot/img/public \
+  services/sonarqube/data/sonarqube/opt/sonarqube/conf \
+  services/sonarqube/data/sonarqube/opt/sonarqube/data \
+  services/sonarqube/data/sonarqube/opt/sonarqube/extensions \
+  services/sonarqube/data/sonarqube/opt/sonarqube/lib/bundled-plugins \
+  services/sonarqube/data/sonardb/var/lib/postgresql
   products/statics/data/usr/share/nginx/html \
   products/webapp/data/var/www/html \
 )

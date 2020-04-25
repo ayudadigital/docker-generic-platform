@@ -59,18 +59,18 @@ EOF
                 echo "The 'platform_products' docker network already exists, skipping"
             fi
             # Create directories
+            SAVE_UMASK=$(umask)
+            umask 0000
             for directory in ${assets[*]}; do
                 if [ ! -d "${directory}" ]; then
                     echo -n "- Creating '${directory}' directory..."
                     mkdir -p "${directory}"
                     echo "[OK]"
-                    echo -n "- Setting '${directory}' permissions..."
-                    chmod 777 "${directory}"
-                    echo "[OK]"
                 else
                     echo "The '${directory}' directory already exists, skipping"
                 fi
             done
+            umask $(SAVE_UMASK)
             ;;
         *)
             showNotImplemtedMessage "$1" "${FUNCNAME[0]}"
