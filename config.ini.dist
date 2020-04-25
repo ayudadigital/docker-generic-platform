@@ -26,6 +26,7 @@ products=(webapp statics)
 #
 assets=( \
   services/haproxy/data/etc/letsencrypt \
+  services/haproxy/data/usr/local/etc/haproxy \
   services/jenkins/data/var/jenkins_home \
   services/mail/data/var/spool/postfix \
   services/nexus/data/nexus-data \
@@ -39,4 +40,14 @@ assets=( \
   services/sonarqube/data/sonardb/var/lib/postgresql
   products/statics/data/usr/share/nginx/html \
   products/webapp/data/var/www/html \
+)
+
+# dist files
+#
+# Create config files from dist ones if it doesn't exist 
+#
+distfiles=( \
+  services/passbolt/mysql.env.dist \
+  services/passbolt/passbolt.env.dist \
+  services/sonarqube/.env.dist \
 )

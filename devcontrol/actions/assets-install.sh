@@ -70,7 +70,16 @@ EOF
                     echo "The '${directory}' directory already exists, skipping"
                 fi
             done
-            umask $(SAVE_UMASK)
+            for file in ${distfiles[*]}; do
+                if [ ! -d "${directory}" ]; then
+                    echo -n "- Creating '${file%.*}' config file from the dist file..."
+                    cp -pn "${file}" "${file%.*}"
+                    echo "[OK]"
+                else
+                    echo "The '${file%.*}' file already exists, skipping"
+                fi
+            done
+            umask ${SAVE_UMASK}
             ;;
         *)
             showNotImplemtedMessage "$1" "${FUNCNAME[0]}"
