@@ -79,7 +79,7 @@ EOF
                     echo "The '${file%.*}' file already exists, skipping"
                 fi
             done
-            umask ${SAVE_UMASK}
+            umask "${SAVE_UMASK}"
             ;;
         *)
             showNotImplemtedMessage "$1" "${FUNCNAME[0]}"
