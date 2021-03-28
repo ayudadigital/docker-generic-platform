@@ -1,5 +1,41 @@
 # Changelog
 
+## v2.1.0 (2021-03-28)
+
+### Changes
+
+#### New
+
+* Add haproxy service ([370cc86](https://github.com/ayudadigital/docker-generic-platform/commit/370cc86))
+* Add config file creation from dist ones in asset-install ([813abb3](https://github.com/ayudadigital/docker-generic-platform/commit/813abb3))
+
+#### Upgrade
+
+* Review all component versions ([313b5ed](https://github.com/ayudadigital/docker-generic-platform/commit/313b5ed))
+* Use 2.4 docker-compose and local volumes for services ([aad0af6](https://github.com/ayudadigital/docker-generic-platform/commit/aad0af6))
+
+#### Update
+
+* Review assets-install action ([4892fe7](https://github.com/ayudadigital/docker-generic-platform/commit/4892fe7))
+
+#### Fix
+
+* Resolve SC2086 issue in assets-install ([3a663c7](https://github.com/ayudadigital/docker-generic-platform/commit/3a663c7))
+* Resolve error in env file creation ([2b7a07c](https://github.com/ayudadigital/docker-generic-platform/commit/2b7a07c))
+
+#### Build
+
+* Update Auto Release Log adding v2.1.0 info with JPL ([63891e6](https://github.com/ayudadigital/docker-generic-platform/commit/63891e6))
+* Use jpl v6.2.0 ([2b810e3](https://github.com/ayudadigital/docker-generic-platform/commit/2b810e3))
+
+#### Docs
+
+* Generate v2.0.0 changelog with JPL ([4c9bfde](https://github.com/ayudadigital/docker-generic-platform/commit/4c9bfde))
+
+### Authors
+
+* Pedro Amador
+
 ## v2.0.0 (2020-04-24)
 
 ### Changes
