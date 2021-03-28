@@ -1,6 +1,6 @@
 #!groovy
 
-@Library('github.com/ayudadigital/jenkins-pipeline-library@v4.0.0') _
+@Library('github.com/ayudadigital/jenkins-pipeline-library@v6.2.0') _
 
 // Initialize global config
 cfg = jplConfig('docker-generic-platform', 'platform', '', [email: env.CI_NOTIFY_EMAIL_TARGETS])
@@ -25,10 +25,9 @@ pipeline {
             }
         }
         stage('Make release') {
-            when { expression { cfg.BRANCH_NAME.startsWith('release/new') } }
+            when { branch 'release/new' }
             steps {
                 jplMakeRelease(cfg, true)
-                deleteDir()
             }
         }
     }
@@ -36,6 +35,9 @@ pipeline {
     post {
         always {
             jplPostBuild(cfg)
+        }
+        cleanup {
+            deleteDir()
         }
     }
 
