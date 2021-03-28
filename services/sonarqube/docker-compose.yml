@@ -2,7 +2,7 @@ version: '2.4'
 
 services:
   sonarqube:
-    image: ayudadigital/gp-sonarqube:2.0.0
+    image: ayudadigital/gp-sonarqube:2.0.1
     ports:
       - 4002:9000
     environment:

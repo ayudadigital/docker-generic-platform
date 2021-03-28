@@ -9,7 +9,7 @@ services:
       - ./data/passboltdb/var/lib/mysql:/var/lib/mysql
 
   passbolt:
-    image: ayudadigital/gp-passbolt:2.0.0
+    image: ayudadigital/gp-passbolt:2.0.1
     ports:
       - 4004:80
     tty: true
